@@ -17,7 +17,7 @@ exports. default = {
       cb(null, _path.resolve.call(void 0, __dirname, '..', '..', 'uploads', 'images'));
     },
     filename: (req, file, cb) => {
-      cb(null, `${Date.now()}_${aleatorio()}.${_path.extname.call(void 0, file.originalname)}`);
+      cb(null, `${Date.now()}_${aleatorio()}${_path.extname.call(void 0, file.originalname)}`);
     },
   }),
 };

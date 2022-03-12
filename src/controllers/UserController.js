@@ -18,8 +18,6 @@ class UserController {
 
   async index(req, res) {
     try {
-      console.log(req.userId);
-      console.log(req.userEmail);
       const users = await User.findAll({ attributes: ['id', 'nome', 'email'] });
       return res.json(users);
     } catch (error) {
@@ -45,7 +43,6 @@ class UserController {
   async update(req, res) {
     try {
       const id = req.userId;
-      console.log(id);
 
       if (!id) {
         return res.status(400).json({
