@@ -4,7 +4,7 @@ var _AlunoController = require('../controllers/AlunoController'); var _AlunoCont
 
 const router = new (0, _express.Router)();
 
-router.get('/', _loginRequired2.default, _AlunoController2.default.index);
+router.get('/', _AlunoController2.default.index);
 router.post('/', _loginRequired2.default, _AlunoController2.default.store);
 router.put('/:id', _loginRequired2.default, _AlunoController2.default.update);
 router.get('/:id', _loginRequired2.default, _AlunoController2.default.show);
