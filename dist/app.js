@@ -17,7 +17,7 @@ var _fotoRoutes = require('./routes/fotoRoutes'); var _fotoRoutes2 = _interopReq
 
 const whiteList = [
   'http://localhost:3000',
-  'http://35.215.255.138',
+  
 ];
 
 const corsOptions = {

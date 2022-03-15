@@ -5,5 +5,5 @@ const port = process.env.APP_PORT;
 
 _app2.default.listen(port, () => {
   console.log('O pai está on!');
-  console.log(_appConfig2.default.url);
+  // console.log(appConfig.url);
 });
