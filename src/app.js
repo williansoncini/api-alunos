@@ -17,7 +17,7 @@ import fotoRoutes from './routes/fotoRoutes';
 
 const whiteList = [
   'http://localhost:3000',
-  
+
 ];
 
 const corsOptions = {
@@ -40,7 +40,9 @@ class App {
   middlewares() {
     // this.app.use(cors(corsOptions));
     this.app.use(cors());
-    this.app.use(helmet());
+    // this.app.use(helmet({
+    //   crossOriginEmbedderPolicy: false,
+    // }));
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
     this.app.use(express.static(resolve(__dirname, '..', 'uploads', 'images')));

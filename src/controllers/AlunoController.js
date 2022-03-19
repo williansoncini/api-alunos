@@ -35,7 +35,11 @@ class AlunoController {
         });
       }
 
+      console.log('id');
+      console.log(id);
       const aluno = await Aluno.findByPk(id);
+      console.log('Nome aluno');
+      console.log(aluno);
 
       if (!aluno) {
         return res.status(400).json({
